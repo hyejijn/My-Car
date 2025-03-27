@@ -1,0 +1,54 @@
+@import url("reset.css");
+@import url("normalize.css");
+@import url("common.css");
+
+
+
+.main_top{
+    background: #fff;
+    
+}
+
+.container{
+    width: 1128px;
+    margin: auto;
+    
+}
+.main_text{
+    text-align: right;
+    position: relative;
+    z-index: 999;
+
+}
+
+
+span{
+    color: #fff;
+}
+
+span::after{
+    content: "";
+    width: 163px;
+    height: 80px;
+    background: #333;
+    position: absolute;
+    right: 95px;
+    top: 2px;
+    z-index: -1;
+}
+
+
+p::after{
+    content: "";
+    width: 280px;
+    height: 20px;
+    background: #BADEF8;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.arrow{
+    margin-top: 82px;
+}
