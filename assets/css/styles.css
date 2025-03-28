@@ -9,11 +9,6 @@
     
 }
 
-.container{
-    width: 1128px;
-    margin: auto;
-    
-}
 .main_text{
     text-align: right;
     position: relative;
@@ -22,23 +17,18 @@
 }
 
 
-span{
+.bg-black{
+    background-color: #000;
     color: #fff;
-}
-
-span::after{
-    content: "";
-    width: 163px;
-    height: 80px;
-    background: #333;
-    position: absolute;
-    right: 95px;
-    top: 2px;
-    z-index: -1;
+    padding: 0.25rem 0.5rem;
 }
 
 
-p::after{
+.sky-line{
+    position: relative;
+}
+
+.sky-line::after{
     content: "";
     width: 280px;
     height: 20px;
@@ -51,4 +41,69 @@ p::after{
 
 .arrow{
     margin-top: 82px;
+    animation: lotate 2s infinite;
+
+    position: relative;
+}
+@keyframes lotate {
+    0% {
+    top:0;
+    }
+  
+    50% {
+      top:30px;
+    }
+  
+    100% {
+     top:0;
+    }
+  }
+
+@media(max-width:1280px){
+    .main_text{
+        margin-right: 50px;
+    }
+}
+
+
+@media(max-width:1024px){
+    .main_text{
+        text-align: center;
+        margin: 0;
+    }
+    .sky-line::after{
+        content: "";
+        width: 80%;
+        right: 10%;
+    }
+}
+
+
+@media(max-width:768px){
+    .main_text{
+        margin-bottom: 50px;
+    }
+}
+
+
+@media(max-width:540px){
+
+    .main_text h2{
+        font-size: 2.5rem;
+        line-height: 140%;
+        letter-spacing: -.025em;
+        color:#333;
+    }    
+    
+    .sky-line{
+        font-size: 1.43rem;
+        line-height: 140%;
+        letter-spacing: -.025em;
+        color: #767676;
+    }
+}
+
+@media(max-width:340px){
+ 
+
 }
