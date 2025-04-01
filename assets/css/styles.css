@@ -3,75 +3,72 @@
 @import url("common.css");
 
 
-
-.main_top{
-    position: relative;
+.kv-top{
+  position: relative;
+  z-index: 9;
+  height: 80vh;
 }
 
-.main_top::after{
-    content: "";
-    width: 100%;
-    height: 710px;
-    background-color: #F4F4F4;
-    position: absolute;
-    z-index: -1;
-    top: 0;
+.kv-top::after{
+  content: "";
+  width: 100%;
+  height: 80vh;
+  background: #F4F4F4;
+  position: absolute;
+  top: 0;
+  z-index: -2;
 }
 
-.main_text{
-    top: 141px;
-    text-align: right;
-    position: relative;
-    z-index: 999;
-
+.title-h2{
+  margin-top: 142px;
 }
 
-.content-row{
-    position: relative;
-    width: 1124px;
-    margin: auto;
-
-} 
-
-.main_car{
-    width: 728px;
-    height: 439px;
-    position: absolute;
-
-
+/* Right? */
+.w-50 h2,
+.w-50 h2,
+.w-50 p {
+    margin-right: 15%;
 }
 
 
-.bg-black{
-    background-color: #0C3451;
-    color: #fff;
-    padding: 0.25rem 0.5rem;
+.main-car{
+  position: relative;
+  max-width: 728px;
+  bottom: -69%;
+  left: 5%;
 }
 
-
-.sky-line{
-    position: relative;
+.point-bg{
+  background-color: #0C3451;
+  color: #fff;
 }
 
-.sky-line::after{
-    content: "";
-    width: 280px;
-    height: 20px;
-    background: #BADEF8;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+.point-line{
+  position: relative;
+  z-index: 77;
 }
 
-.arrow{
+.point-line::after{
+  content: "";
+  width: 100%;
+  height: 20px;
+  background: #BADEF8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* shit */
+/* .arrow__btn{
     animation: lotate 2s infinite;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 100%;
     
+} */
 
-}
+
 @keyframes lotate {
     0% {
     top:0;
@@ -87,47 +84,31 @@
   }
 
 @media(max-width:1280px){
-    .main_text{
-        margin-right: 50px;
-    }
+  .main-car{
+    position: relative;
+    max-width: 100%;
+    bottom: -69%;
+    left: 5%;
+  }
+
 }
 
 
 @media(max-width:1024px){
-    .main_text{
-        text-align: center;
-        margin: 0;
-    }
-    .sky-line::after{
-        content: "";
-        width: 80%;
-        right: 10%;
-    }
+  .kv-top .d-flex{
+    flex-direction: column;
+  }
 }
 
 
 @media(max-width:768px){
-    .main_text{
-        margin-bottom: 50px;
-    }
+
 }
 
 
 @media(max-width:540px){
 
-    .main_text h2{
-        font-size: 2.5rem;
-        line-height: 140%;
-        letter-spacing: -.025em;
-        color:#333;
-    }    
-    
-    .sky-line{
-        font-size: 1.43rem;
-        line-height: 140%;
-        letter-spacing: -.025em;
-        color: #767676;
-    }
+
 }
 
 @media(max-width:340px){
