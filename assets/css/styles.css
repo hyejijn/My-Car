@@ -19,17 +19,21 @@
   z-index: -2;
 }
 
-.title-h2{
-  margin-top: 142px;
-}
+
 
 /* Right? */
-.w-50 h2,
-.w-50 h2,
-.w-50 p {
-    margin-right: 15%;
-}
+  .w-50 h2,
+  .w-50 p {
+    margin-right: 10%;
+  }
 
+
+.sky-line{
+  font-size: 2em;
+  line-height: 140%;
+  letter-spacing: -.025em;
+  color: #767676;
+}
 
 .main-car{
   position: relative;
@@ -59,14 +63,18 @@
   z-index: -1;
 }
 
+
 /* shit */
-/* .arrow__btn{
+.arrow{
+  position: relative;
+}
+.arrow__btn{
     animation: lotate 2s infinite;
     position: absolute;
     left: 50%;
-    top: 100%;
+ 
     
-} */
+}
 
 
 @keyframes lotate {
@@ -84,11 +92,47 @@
   }
 
 @media(max-width:1280px){
+  .kv-top::after{
+    width: 100%;
+    height: 700px;
+  }
   .main-car{
     position: relative;
     max-width: 100%;
     bottom: -69%;
-    left: 5%;
+    left: 25%;
+  }
+  .w-50 h2,
+  .w-50 p {
+    margin-right: 20%;
+}
+
+}
+@media(max-width:1147px){
+  .kv-top::after{
+    width: 100%;
+    height: 700px;
+  }
+
+  .main-car{
+    position: relative;
+    max-width: 100%;
+    bottom: -69%;
+    left: 25%;
+  }
+  /* .w-50 h2,
+  .w-50 p {
+    margin-right: 20%;
+  } */
+
+  .w-50 h2{
+    margin-right: 0 30px;
+    font-size: 2.86em;
+  }
+
+  .sky-line{
+    margin: 10px 0;
+    font-size: 1.43em !important;
   }
 
 }
@@ -96,22 +140,104 @@
 
 @media(max-width:1024px){
   .kv-top .d-flex{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
+
+  .kv-top::after{
+    width: 100%;
+    height: 725px;
+  }
+
+  .main-car{
+    width: 80%;
+    left: 15%;
+
+  }
+
+  h2{
+    font-size: 3.36em;
+  }
+
+  .sky-line{
+    font-size: 1.43em !important;
+  }
+
 }
 
 
 @media(max-width:768px){
+  .kv-top .d-flex{
+    flex-direction: column-reverse;
+   
+  }
+
+  .kv-top::after{
+    width: 100%;
+    height: 740px;
+  }
+
+  .main-car{
+    width: 90%;
+    left: 50px;
+  }
+  
+  h2{
+    font-size: 2.86em;
+  }
+
+  .sky-line{
+    font-size: 1.43em !important;
+  }
+
+  .w-50 h2{
+    margin-top: 15%;
+}
 
 }
 
 
 @media(max-width:540px){
-
-
-}
+  .kv-top::after{
+    width: 100%;
+    height: 580px;
+  }
+  .w-50 h2,
+  .w-50 p {
+    margin-right: 10%;
+  }
+  }
 
 @media(max-width:340px){
+
+
+  .kv-top::after{
+    width: 100%;
+    height: 350px;
+  }
+
+  .text-right{
+    text-align: center;
+  }
+
+  .w-50 h2{
+    margin: 20px;
+    margin-right: 0;
+    font-size: 1.86em;
+  }
+
+  .sky-line{
+    margin-left: 50px;
+    font-size: 1em !important;
+  }
+
+  .main-car{
+    width: 90%;
+    left: 30px;
+  }
  
+  .arrow__btn{
+    width: 30px;
+    height: 30px;
+  }
 
 }
