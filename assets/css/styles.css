@@ -6,13 +6,13 @@
 .kv-top{
   position: relative;
   z-index: 9;
-  height: 80vh;
+  /* height: 80vh; */
 }
 
 .kv-top::after{
   content: "";
   width: 100%;
-  height: 80vh;
+  height: 300px;
   background: #F4F4F4;
   position: absolute;
   top: 0;
@@ -76,6 +76,24 @@
     
 }
 
+/* section02 */
+
+h4{
+  text-align: center;
+}
+
+.grid{
+  display: flex;
+}
+
+.grdi_title p{
+  font-size: 1.29rem;
+}
+
+.sec02_icon{
+  width: 88px;
+  height: 88px;
+}
 
 @keyframes lotate {
     0% {

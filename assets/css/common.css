@@ -6,11 +6,43 @@ body{
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    position: sticky;
+    align-items: center;
+    background-color: #fff;
+    padding:  23px 405px;
+    width: 100%;
+    height: 86px;
+    z-index: 99;
+}
+
+.nav-bar ul{
+    display: flex;
+    width: 100%;
+    gap: 50px; 
+}
+
+
 .container{
    position: relative;
     width: 1128px;
+    height:  937px;
     margin: auto;
 }
+
+
 
 .img{
     width: 100%;
@@ -19,7 +51,6 @@ body{
 .d-flex{
     display: flex;
 }
-
 
 .mr-20{
     margin-right: 20%;
@@ -30,6 +61,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 h2{
     font-size: 60px;
     line-height: 140%;
@@ -38,12 +70,19 @@ h2{
 }
 
 h4{
-    font-size: 3em;
+    font-size: 3rem;
+    line-height: 140%;
+    letter-spacing: -.025em;
+    color:#0C3451;
+    margin-top: 17px;
+}
+
+h5{
+    font-size: 1.71rem;
     line-height: 120%;
     letter-spacing: -.025em;
     color:#0C3451;
 }
-
 
 .w-100{
     width: 100%;
@@ -81,9 +120,9 @@ h4{
         width: 100%;
         margin: auto;
     }
+
 }
 
-/*  */
 
 @media(max-width:1024px){
     .w-50{
@@ -94,7 +133,12 @@ h4{
 }
 
 @media(max-width:768px){
-
+    .arrow{
+        top: -60px;
+    }
+    .d-flex{
+        flex-direction: column;
+    }
 }
 
 
