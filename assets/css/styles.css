@@ -2,17 +2,31 @@
 @import url("normalize.css");
 @import url("common.css");
 
+@font-face {
+  font-family: 'Paperlogy-8ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
 
-.kv-top{
+.kv-top .title-h2 {
+  font-family: 'Paperlogy-8ExtraBold';
+}
+
+.sec02__grid-title h5 {
+  font-family: 'Paperlogy-8ExtraBold';
+}
+
+.kv-top {
   position: relative;
   z-index: 9;
   /* height: 80vh; */
 }
 
-.kv-top::after{
+.kv-top::after {
   content: "";
   width: 100%;
-  height: 300px;
+  height: 720px;
   background: #F4F4F4;
   position: absolute;
   top: 0;
@@ -22,37 +36,37 @@
 
 
 /* Right? */
-  .w-50 h2,
-  .w-50 p {
-    margin-right: 10%;
-  }
+.w-50 h2,
+.w-50 p {
+  margin-right: 10%;
+}
 
 
-.sky-line{
+.sky-line {
   font-size: 2em;
   line-height: 140%;
   letter-spacing: -.025em;
   color: #767676;
 }
 
-.main-car{
+.main-car {
   position: relative;
   max-width: 728px;
   bottom: -69%;
   left: 5%;
 }
 
-.point-bg{
+.point-bg {
   background-color: #0C3451;
   color: #fff;
 }
 
-.point-line{
+.point-line {
   position: relative;
   z-index: 77;
 }
 
-.point-line::after{
+.point-line::after {
   content: "";
   width: 100%;
   height: 20px;
@@ -65,195 +79,322 @@
 
 
 /* shit */
-.arrow{
+.arrow {
   position: relative;
 }
-.arrow__btn{
-    animation: lotate 2s infinite;
-    position: absolute;
-    left: 50%;
- 
-    
+
+.arrow__btn {
+  animation: lotate 2s infinite;
+  position: absolute;
+  left: 50%;
 }
 
 /* section02 */
 
-h4{
+h4 {
   text-align: center;
+  margin-top: 116px;
+  margin-bottom: 84px;
 }
 
-.grid{
+.grid_title {
+  width: 552px;
+  height: 224px;
+  border-radius: 0 30px 0 30px;
+  border: 1px solid #D9D9D9;
+  margin-bottom: 15px;
+  gap: 24px;
+
+}
+
+.sec02 .point-line::after {
+  content: "";
+  width: 500px;
+  height: 22px;
+  background: #BADEF8;
+  position: absolute;
+  bottom: 7px;
+  left: 317px;
+  z-index: -1;
+}
+
+.sec02__grid-title {
+  margin: 40px 0 33px 120px;
+}
+
+.grid_title p {
+  font-size: 0.9rem;
+}
+
+.po-r {
+  position: relative;
+}
+
+.content-icon {
   display: flex;
+  align-items: end;
+  justify-content: flex-end;
+  margin-right: 27px;
+  margin-bottom: 27px;
 }
 
-.grdi_title p{
-  font-size: 1.29rem;
-}
 
-.sec02_icon{
+.sec02_icon {
   width: 88px;
   height: 88px;
 }
 
+/* .sec02_icon{
+  position: relative;
+  bottom: 0;
+} */
+
 @keyframes lotate {
-    0% {
-    top:0;
-    }
-  
-    50% {
-      top:30px;
-    }
-  
-    100% {
-     top:0;
-    }
+  0% {
+    top: 0;
   }
 
-@media(max-width:1280px){
-  .kv-top::after{
+  50% {
+    top: 30px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+@media(max-width:1280px) {
+  .kv-top::after {
     width: 100%;
     height: 700px;
   }
-  .main-car{
+
+  .main-car {
     position: relative;
     max-width: 100%;
     bottom: -69%;
     left: 25%;
   }
+
   .w-50 h2,
   .w-50 p {
     margin-right: 20%;
-}
-
-}
-@media(max-width:1147px){
-  .kv-top::after{
-    width: 100%;
-    height: 700px;
   }
 
-  .main-car{
+  /* sec_02 */
+  .sec02 .point-line::after {
+    left: 385px;
+  }
+
+  .sec02 .d-flex {
+    margin-left: 25px;
+
+  }
+
+  .grid_title {}
+
+
+
+}
+
+@media(max-width:1147px) {
+  .kv-top::after {
+    width: 100%;
+    height: 600px;
+  }
+
+  .main-car {
     position: relative;
     max-width: 100%;
     bottom: -69%;
     left: 25%;
   }
-  /* .w-50 h2,
-  .w-50 p {
-    margin-right: 20%;
-  } */
 
-  .w-50 h2{
+  .w-50 h2,
+  .w-50 p {
+    margin-right: 30%;
+  }
+
+  .w-50 h2 {
     margin-right: 0 30px;
     font-size: 2.86em;
   }
 
-  .sky-line{
+  .sky-line {
     margin: 10px 0;
     font-size: 1.43em !important;
   }
 
+  /* sec02 */
+
+  .sec02 .d-flex {
+    margin-left: 5px;
+  }
+
+  .sec02 .point-line::after {
+    left: 315px;
+  }
+
+  .sec02__grid-title {
+    margin: 40px 0 33px 70px;
+  }
+
+  .h-760 {
+    height: 668px;
+  }
 }
 
 
-@media(max-width:1024px){
-  .kv-top .d-flex{
+@media(max-width:1024px) {
+  .kv-top .d-flex {
     flex-direction: column-reverse;
   }
 
-  .kv-top::after{
+  .kv-top::after {
     width: 100%;
-    height: 725px;
+    height: 620px;
   }
 
-  .main-car{
-    width: 80%;
+  .main-car {
+    width: 60%;
     left: 15%;
 
   }
 
-  h2{
+  .w-50 h2,
+  .w-50 p {
+    margin-right: 20%;
+  }
+
+  h2 {
     font-size: 3.36em;
   }
 
-  .sky-line{
+  .sky-line {
     font-size: 1.43em !important;
+  }
+
+  /* sec02 */
+
+  .sec02 .d-flex {
+    margin-left: 9px;
+  }
+
+  .sec02 .point-line::after {
+    left: 260px;
+  }
+
+  .sec02__grid-title {
+    margin: 40px 0 33px 70px;
+  }
+
+  .h-760 {
+    height: 760px;
+  }
+
+  .grid_title {
+    width: 490px;
+
   }
 
 }
 
+/* 태블릿 */
 
-@media(max-width:768px){
-  .kv-top .d-flex{
-    flex-direction: column-reverse;
-   
+@media(max-width:768px) {
+
+  .flex-column{
+    flex-direction: column;
+  }
+  .sec02 .point-line::after {
+    content: "";
+    width: 0;
   }
 
-  .kv-top::after{
+  .kv-top .d-flex {
+    flex-direction: column-reverse;
+
+  }
+
+  .kv-top::after {
     width: 100%;
     height: 740px;
   }
 
-  .main-car{
+  .main-car {
     width: 90%;
     left: 50px;
   }
-  
-  h2{
+
+  h2 {
     font-size: 2.86em;
   }
 
-  .sky-line{
+  .sky-line {
     font-size: 1.43em !important;
   }
 
-  .w-50 h2{
+  .w-50 h2 {
     margin-top: 15%;
-}
+  }
+
+  /* sec02 */
+  .kv-top::after {
+    width: 100%;
+    height: 740px;
+  }
+
+
+  .sec02 .d-flex {
+    width: 90%;
+  }
+
 
 }
 
+/* 모바일 */
 
-@media(max-width:540px){
-  .kv-top::after{
+@media(max-width:540px) {
+  .kv-top::after {
     width: 100%;
     height: 580px;
   }
+
   .w-50 h2,
   .w-50 p {
     margin-right: 10%;
   }
-  }
+}
 
-@media(max-width:340px){
+@media(max-width:340px) {
 
 
-  .kv-top::after{
+  .kv-top::after {
     width: 100%;
     height: 350px;
   }
 
-  .text-right{
+  .text-right {
     text-align: center;
   }
 
-  .w-50 h2{
+  .w-50 h2 {
     margin: 20px;
     margin-right: 0;
     font-size: 1.86em;
   }
 
-  .sky-line{
+  .sky-line {
     margin-left: 50px;
     font-size: 1em !important;
   }
 
-  .main-car{
+  .main-car {
     width: 90%;
     left: 30px;
   }
- 
-  .arrow__btn{
+
+  .arrow__btn {
     width: 30px;
     height: 30px;
   }

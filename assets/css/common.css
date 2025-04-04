@@ -82,6 +82,7 @@ h5{
     line-height: 120%;
     letter-spacing: -.025em;
     color:#0C3451;
+    margin-top: 0;
 }
 
 .w-100{
@@ -94,6 +95,10 @@ h5{
 
 .w-30{
     width: 30%;
+}
+
+.w-70{
+    width: 70%;
 }
 
 .w-25{
@@ -136,9 +141,7 @@ h5{
     .arrow{
         top: -60px;
     }
-    .d-flex{
-        flex-direction: column;
-    }
+
 }
 
 
