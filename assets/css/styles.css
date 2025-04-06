@@ -1,7 +1,10 @@
 @import url("reset.css");
 @import url("normalize.css");
 @import url("common.css");
-
+/* 
+* {
+  outline: 1px solid red; 
+} */
 
 .kv-top{
   position: relative;
@@ -12,7 +15,7 @@
 .kv-top::after{
   content: "";
   width: 100%;
-  height: 300px;
+  height: 743px;
   background: #F4F4F4;
   position: absolute;
   top: 0;
@@ -71,28 +74,49 @@
 .arrow__btn{
     animation: lotate 2s infinite;
     position: absolute;
-    left: 50%;
- 
-    
+    left: 50%;  
 }
 
 /* section02 */
 
 h4{
   text-align: center;
+  margin-bottom: 74px;
 }
 
-.grid{
-  display: flex;
+
+.sec02__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-.grdi_title p{
+.grid-box {
+  width: 100%;
+  height: 224px;
+  position: relative;
+  border: 1px solid #D9D9D9;
+  border-radius: 0 30px 0 30px; 
+}
+
+.sec02__grid-title{
+ margin-left: 120px;
+}
+
+
+.grid_title p{
   font-size: 1.29rem;
 }
 
 .sec02_icon{
+  position: absolute;
+  top: 103px;
+  right: 25px;
+  bottom: 33px;
+  left: 439px;
   width: 88px;
   height: 88px;
+ 
 }
 
 @keyframes lotate {
@@ -123,6 +147,42 @@ h4{
   .w-50 h2,
   .w-50 p {
     margin-right: 20%;
+}
+
+.arrow{
+  position: relative;
+}
+.arrow__btn{
+    animation: lotate 2s infinite;
+    position: absolute;
+    left: 50%;  
+}
+
+
+ /* section02 */
+
+h4{
+  text-align: center;
+  margin-bottom: 74px;
+}
+
+
+.grid-box{
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+.sec02__grid-title{
+  margin-left: 90px;
+ }
+
+.sec02__grid {
+  gap: 20px 0;
+}
+
+.sec02_icon{
+left: 390px;
 }
 
 }
@@ -180,13 +240,18 @@ h4{
     font-size: 1.43em !important;
   }
 
+  /* section02 */
+
+  .sec02_icon{
+    left: 370px;
+    bottom: 33px;
+  } 
 }
 
 
 @media(max-width:768px){
   .kv-top .d-flex{
     flex-direction: column-reverse;
-   
   }
 
   .kv-top::after{
@@ -199,8 +264,12 @@ h4{
     left: 50px;
   }
   
-  h2{
-    font-size: 2.86em;
+  .title-h2{
+    font-size: 2rem;
+
+  }
+  .sec02__main-title{
+    font-size: 1.43rem;
   }
 
   .sky-line{
@@ -211,6 +280,43 @@ h4{
     margin-top: 15%;
 }
 
+
+.arrow{
+  position: relative;
+  top: 20%;
+}
+.arrow__btn{
+    animation: lotate 2s infinite;
+    position: absolute;
+    left: 50%;  
+}
+
+
+  /* section02 */
+
+  .sec02__grid{
+    grid-template-columns: 1fr;
+  }
+
+  .grid-box{
+    display: flex;
+  }
+
+  .sec02__grid-title{
+    width: 80%;
+  }
+
+  .sec02_icon{
+    position: absolute;
+    top: 35px;
+    left: 470px;
+    width: 150px;
+    height: 150px;
+  }
+
+
+
+  /* 반응형일때 br 없애기 Jquery ???? span????*/
 }
 
 
@@ -223,6 +329,31 @@ h4{
   .w-50 p {
     margin-right: 10%;
   }
+
+
+  /* section02 */
+
+  .grid-box {
+    width: 85%;
+    height: 224px;
+  }
+
+  .sec02__grid-title{
+    width: 80%;
+  }
+
+  .sec02_icon{
+    position: absolute;
+    top: 35px;
+    left: 303px;
+    width: 130px;
+    height: 130px;
+  }
+
+  .sec02__grid-title{
+    margin-left: 58px;
+   }
+
   }
 
 @media(max-width:340px){
@@ -230,7 +361,7 @@ h4{
 
   .kv-top::after{
     width: 100%;
-    height: 350px;
+    height: 330px;
   }
 
   .text-right{
@@ -238,8 +369,7 @@ h4{
   }
 
   .w-50 h2{
-    margin: 20px;
-    margin-right: 0;
+    margin: 0 20px;
     font-size: 1.86em;
   }
 
@@ -258,4 +388,55 @@ h4{
     height: 30px;
   }
 
+
+
+
+
+  /* section02 */
+  h4 {
+    text-align: center;
+    margin-bottom: 74px;
+    font-size: 25px;
+  }
+
+  h5{
+    font-size: 15px;
+  }
+
+  .grid-box {
+    position: relative;
+    width: 80%;
+    height: 173px;
+    margin: 20px auto;
+  }
+
+  .grid_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: relative;
+  }
+
+  .sec02__grid {
+    margin: 0 auto;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .sec02_grid_img {
+    position: relative;  
+    height: 100px; 
+  }
+  
+  .sec02_icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -45px;
+    width: 80px;
+    height: 80px;
+  }
 }
