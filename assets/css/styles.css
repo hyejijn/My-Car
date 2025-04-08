@@ -119,6 +119,37 @@ h4{
  
 }
 
+
+/* section03 */
+
+.sec_03 .container{
+  padding: 164px 41px 202px 74px;
+}
+
+.sec_03_title h4{
+
+}
+
+.sec_03_text{
+  width: 405px;
+  height: 569px;
+  background: #BADEF8;
+}
+
+.sec_03_content{
+  text-align: center;
+}
+
+.sec_03_content button{
+ 
+}
+
+.sec_03_img{
+  
+  background: #D9D9D9;
+}
+
+
 @keyframes lotate {
     0% {
     top:0;
