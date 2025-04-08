@@ -123,31 +123,68 @@ h4{
 /* section03 */
 
 .sec_03 .container{
-  padding: 164px 41px 202px 74px;
+ padding: 164px 41px 202px 74px;
 }
 
 .sec_03_title h4{
-
+  margin-top: 0;
+  margin-bottom: 84px;
 }
 
+input{
+  width: 405px;
+  height: 45px;
+  padding: 10px 0 10px 5px;
+  margin-bottom: 41px;
+  border: none;
+  border-bottom: 1px solid #0C3451;
+  background-color: transparent;
+  font-size: 16px;
+}
 .sec_03_text{
   width: 405px;
   height: 569px;
-  background: #BADEF8;
 }
 
-.sec_03_content{
-  text-align: center;
+
+input::placeholder{
+  color: #0C3451;
+  font-size: 16px;
 }
 
-.sec_03_content button{
- 
+label{
+  display: flex;
+
 }
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  accent-color: #0C3451;
+  cursor: pointer;
+}
+
+button{
+  width: 100%;
+  height: 41px;
+  margin-top: 100px;
+  padding: 10px 159px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0C3451;
+  color: #FFFFFF;
+  font-size: 15px;
+  cursor: pointer;
+}
+
 
 .sec_03_img{
-  
-  background: #D9D9D9;
+  width: 90%;
+  margin-left: 10%;
 }
+
 
 
 @keyframes lotate {
