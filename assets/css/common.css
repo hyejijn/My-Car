@@ -38,7 +38,6 @@ header{
 .container{
    position: relative;
     width: 1128px;
-    height:  937px;
     margin: auto;
 }
 
@@ -150,5 +149,7 @@ h5{
 }
 
 @media(max-width:340px){
-
+    .swiper-slide{
+        
+    }
 }

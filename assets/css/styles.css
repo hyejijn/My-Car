@@ -166,6 +166,11 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
+
+.chk_text{
+  font-size: 0.93rem;
+}
+
 button{
   width: 100%;
   height: 41px;
@@ -182,7 +187,84 @@ button{
 
 .sec_03_img{
   width: 90%;
+  margin-top: 80px;
   margin-left: 10%;
+}
+
+/* section08 */
+
+.sec08_slide{
+  width: 100%;
+  margin: 0;
+  background-color: transparent;
+}
+
+.sec08_slide_img img{
+  width: 100%;
+}
+
+.sec08_slide_text h5{
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.sec08_slide_text p{
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.sec08_slide_text .info{
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.sec08_slide_text .bold{
+  font-size: 1.07rem;
+  font-weight: 900;
+}
+
+.sec08_slide_text .line{
+  font-size: 0.71rem;
+  text-decoration: line-through;
+}
+
+.sec08_slide_text .discount{
+  font-size: 1.07rem;
+  font-weight: 500;
+  color: #2295E8;
+}
+
+.badge-wrap{
+  display:  flex;
+  margin-top: 4px;
+}
+
+.badge{
+  font-size: 0.86rem;
+  background-color: #fff;
+  padding: 1px 4px;
+}
+
+.badge-colr{
+  background-color: #2295E8;
+  color: #fff;
+  padding: 1px 4px;
+}
+
+.fav{
+  display: flex;
+  margin-top: 6px;
+}
+.fav i{
+ color: #E54343;
+ margin-right: 2px;
+}
+
+.fav_num{
+  font-size: 0.71rem;
+  margin-top: 0;
 }
 
 
@@ -382,6 +464,23 @@ left: 390px;
     height: 150px;
   }
 
+/* section03 */
+
+.container{
+  
+}
+
+.sec_03_img{
+  display: none;
+}
+
+.sec_03_text{
+  margin-left: 17%;
+}
+
+.chk_text{
+  font-size: 0.93rem;
+}
 
 
   /* 반응형일때 br 없애기 Jquery ???? span????*/
@@ -421,6 +520,22 @@ left: 390px;
   .sec02__grid-title{
     margin-left: 58px;
    }
+
+
+  /* section08 */
+  
+  .sec08_slide{
+    width: 60%;
+    padding: 0 10px;
+    background-color: transparent;
+  }
+
+  /* swiper */
+
+  .swiper-pagination{
+    position: static;
+    margin-top: 20px;
+  }
 
   }
 
@@ -506,5 +621,23 @@ left: 390px;
     top: -45px;
     width: 80px;
     height: 80px;
+  }
+
+  /* section08 */
+  .sec08_slide{
+    width: 100%;
+    padding: 0 30px;
+    background-color: transparent;
+  }
+  
+
+
+
+
+  /* swiper */
+  
+  .swiper-pagination{
+    position: static;
+    margin-top: 10px;
   }
 }
